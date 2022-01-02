@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
+  <style>
+    button {border: 1px solid red;} 
+  </style>
+</head>
 <meta charset="utf-8">
 <title>This is it</title>
 
@@ -9,42 +13,148 @@
     <p>This is a paragraph</p>
     <p>This is another paragraph.</p>
     <a href="https://www.yoyoexpert.com">This is a link to yoyoexpert</a> 
-    <br />
-    <img src="6.jpg" alt="Broly" style="width:425px;height:275px">
-    <br />
+    <br /><br />
+    <p>this picture is a link</p>
+    <a href="6.jpg" target="_blank"><img src="6.jpg" alt="Broly" style="width:425px;height:275px"></a>
+    <br /><br />
     <button style="color:red">Click me</button> 
     <br />
-    <ul>
+    <ul style="list-style-type:square">
         <li>Goku</li>
         <li>Super Saiyan</li>
         <li>Super Saiyan 3</li>
     </ul> 
-    <br />
-    <table>
+   
+    <ol type="A">
+      <li>Goku</li>
+      <li>Super Saiyan</li>
+      <li>Super Saiyan 3</li>
+    </ol> 
+    
+    <ol type="I">
+      <li>Goku</li>
+      <li>Super Saiyan</li>
+      <li>Super Saiyan 3</li>
+    </ol> 
+    
+
+    <table style="width:400px;">
+      <caption>DBZ</caption>
         <tr>
           <th>Goku</th>
           <th>Super Saiyan</th>
           <th>Super Saiyan 3</th>
+          <th colspan="2">Span Column</th>
+          <th rowspan="2">Span Row</th>
         </tr>
         <tr style=text-align:center;>
           <td>Morning</td>
           <td>6</td>
           <td>3</td>
+          <td>extra</td>
+          <td>rice</td>
+          <td>more</td>
+          <td>sauce</td>
         </tr>
         <tr style=text-align:center;>
           <td>Night</td>
           <td>5</td>
           <td>2</td>
+          <td>pretty</td>
+          <td>please</td>
+          <td>kind</td>
+          <td>sir</td>
         </tr>
       </table> 
       <hr>
-      <pre style=font-family:sans-serif;color:blue;>
+      <pre style=font-family:sans-serif;color:green;>
           How are we doing folks
 
           It's wonderful to use less formatting
 
           <strong>Let's make it Strong</strong>
+
+          <em>Let's emphasize this!</em>
+
+          <mark>Let's mark this one</mark>
+
+          <sub>Let's subscript this one</sub>
+          
+          <del>Let's strikethrough this one</del>
+
+          <q>Let's quote this one</q>
+
+          <abbr title="World Health Organization"> WHO</abbr> was founded in 1948
+
+          <!--This is a comment -->
+          <!--Use CSS to remove the underline from the link -->
+          <a href="6.jpg" style="text-decoration:none;">Link but no underline</a>
+          <!--Use CSS to remove the underline from the link -->
+          <a href="6.jpg" target="_blank">New Window Link</a>
+          <!--This link has a tooltip -->
+          <a href="6.jpg" title="Home">Back to Home</a>
+
+
+          <form action="/action_page.php" method="post" style="border: 2px solid gray;">
+            Name: <input type="text" name="name" placeholder="Your name here" maxlength="3">
+            <input type="radio" name="fav_language" value="css"> CSS
+            <input type="radio" name="fav_language" value="html"> HTML
+            
+            <label for="cars">Choose a car:</label>
+              <select id="cars" name="cars">
+                <option value="None" style="color: gray;">Select Brand</option>
+                <option value="Volvo">Volvo</option>
+                <option value="Ford">Ford</option>
+                <option value="Toyota">Toyota</option>
+              </select> 
+          
+            <label for="username">text input</label>
+            <input id="username" type="text" name="username" disabled>
+            
+            <label for="numb">input range of 1 to 5</label>
+            <input id="numb" type="number" min="1" max="5">
+            
+            <textarea name="note">Fill in Model</textarea>
+            <input type="button" value="Yes">
+
+            
+            <input type="submit">
+          </form> 
+
+
+          <p>Code example: <pre><code> <var>var</var> person;</code></pre></p> 
+
+          <p id="demo">Hi.</p>
+
+          <script>
+          document.getElementById("demo").innerHTML = "Hello World!";
+          document.getElementById("demo").style.fontSize = "25px";
+          document.getElementById("demo").src ="6.jpg";
+          </script> 
+          
+          <!--Float image right -->
+          <iframe src="https://www.yoyoexpert.com" width="600" height="500" style="border:none; "></iframe> 
+          
+          <!--Float image right -->
+          <img src="6.jpg" style="float:right;width:212px;height:137px;">
+
       </pre>
+      <br /><br />
+      <!--Float image right -->
+      <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+      </dl>
+
+      <br />
+      <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+      </blockquote>
+      <blockquote cite="https://www.huxley.net/bnw/four.html">
+        <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+      </blockquote>
 
 </body>
 
